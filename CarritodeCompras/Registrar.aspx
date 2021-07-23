@@ -4,52 +4,77 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8"/>
-    <title>Form-v9 by Colorlib</title>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="Colorlib Templates"/>
+    <meta name="author" content="Colorlib"/>
+    <meta name="keywords" content="Colorlib Templates"/>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <!-- Title Page-->
+    <title>Registro de Cliente</title>
 
-    <link rel="stylesheet" type="text/css" href="../Login/css/nunito-font.css" />
+    <!-- Icons font CSS-->
+    <link href="Login/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all"/>
+    <link href="Login/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all"/>
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"/>
 
-    <link rel="stylesheet" href="Login/css/style1.css" />
-    <meta name="robots" content="noindex, follow" />
+    <!-- Vendor CSS-->
+    <link href="Login/vendor/select2/select2.min.css" rel="stylesheet" media="all"/>
+    <link href="Login/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all"/>
+
+    <!-- Main CSS-->
+    <link href="Login/css/main.css" rel="stylesheet" media="all"/>
 </head>
-<body class="form-v9">
-    <div class="page-content">
-        <div class="form-v9-content" style="background-image: url('Login/images/form-v9.jpg')">
-            <form class="form-detail" action="#" method="post">
-                <h2>Registration Form</h2>
-                <div class="form-row-total">
-                    <div class="form-row">
-                        <input type="text" name="full-name" id="full-name" class="input-text" placeholder="Your Name" />
-                    </div>
-                    <div class="form-row">
-                        <input type="text" name="your-email" id="your-email" class="input-text" placeholder="Your Email" />
-                    </div>
+
+<body>
+    <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w780">
+            <div class="card card-3">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <center><h2 class="title">Registrarse</h2></center>
+                    <form id="form1" runat="server" method="post">
+                        <div class="input-group">
+                            <input class="input--style-3" placeholder="Nombre"/>
+                            <asp:TextBox ID="txt_nombre" runat="server"></asp:TextBox>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3 js-datepicker" placeholder="Apellido"/>
+                            <asp:TextBox ID="txt_apellido" runat="server"></asp:TextBox>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3 js-datepicker" placeholder="Contraseña"/>
+                            <asp:TextBox ID="txt_pass" runat="server" TextMode="Password"></asp:TextBox>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" placeholder="Email"/>
+                            <asp:TextBox ID="txt_email" runat="server"></asp:TextBox>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3"placeholder="cedula"/>
+                            <asp:TextBox ID="txt_cedula" runat="server"></asp:TextBox>
+                        </div>
+                        <div class="p-t-10">
+                             <asp:Button ID="btn_ingresar" class="btn btn--pill btn--green" runat="server" Text="Registrar" /><br /><br />
+                            <asp:Button ID="btn_regresar" class="btn btn--pill btn--green" runat="server" Text="Regresar" OnClick="btn_regresar_Click" />
+                        </div>
+                    </form>
                 </div>
-                <div class="form-row-total">
-                    <div class="form-row">
-                        <input type="password" name="password" id="password" class="input-text" placeholder="Your Password"/>
-                    </div>
-                    <div class="form-row">
-                        <input type="password" name="comfirm-password" id="comfirm-password" class="input-text" placeholder="Comfirm Password" />
-                    </div>
-                </div>
-                <div class="form-row-last">
-                    <input type="submit" name="register" class="register" value="Register" />
-                </div>
-            </form>
+            </div>
         </div>
     </div>
 
-    <script src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+    <!-- Jquery JS-->
+    <script src="Login/vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="Login/vendor/select2/select2.min.js"></script>
+    <script src="Login/vendor/datepicker/moment.min.js"></script>
+    <script src="Login/vendor/datepicker/daterangepicker.js"></script>
 
-        gtag('config', 'UA-23581568-13');
-    </script>
-    <script src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"671f8d28bc7c128f","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.6.0","si":10}'></script>
-</body>
+    <!-- Main JS-->
+    <script src="Login/js/global.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>

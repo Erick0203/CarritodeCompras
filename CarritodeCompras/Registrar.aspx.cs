@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using CarritodeCompras;
 
 namespace CarritodeCompras
 {
@@ -12,6 +13,11 @@ namespace CarritodeCompras
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btn_regresar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Login.aspx");
         }
     }
 }

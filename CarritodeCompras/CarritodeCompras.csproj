@@ -44,6 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -76,15 +77,78 @@
     <Content Include="Login\css\bootstrap\mixins\_visibility.css" />
     <Content Include="Login\css\bootstrap\utilities\_stretched-link.css" />
     <Content Include="Login\css\bootstrap\_media.css" />
+    <Content Include="Login\css\main.css" />
     <Content Include="Login\css\nunito-font.css" />
-    <Content Include="Login\css\style1.css" />
+    <Content Include="Login\css\style.css" />
     <Content Include="Login\fonts\Nunito\OFL.txt" />
+    <Content Include="Login\images\bg-heading-03.jpg" />
     <Content Include="Login\images\bg.jpg" />
     <Content Include="Login\images\form-v9.jpg" />
     <Content Include="Login\js\bootstrap.min.js" />
+    <Content Include="Login\js\global.js" />
     <Content Include="Login\js\jquery.min.js" />
     <Content Include="Login\js\main.js" />
     <Content Include="Login\js\popper.js" />
+    <Content Include="Login\vendor\datepicker\daterangepicker.css" />
+    <Content Include="Login\vendor\datepicker\daterangepicker.js" />
+    <Content Include="Login\vendor\datepicker\moment.min.js" />
+    <Content Include="Login\vendor\font-awesome-4.7\css\font-awesome.css" />
+    <Content Include="Login\vendor\font-awesome-4.7\css\font-awesome.min.css" />
+    <Content Include="Login\vendor\font-awesome-4.7\fonts\fontawesome-webfont.svg" />
+    <Content Include="Login\vendor\font-awesome-4.7\HELP-US-OUT.txt" />
+    <Content Include="Login\vendor\jquery\jquery.js" />
+    <Content Include="Login\vendor\jquery\jquery.min.js" />
+    <Content Include="Login\vendor\mdi-font\css\material-design-iconic-font.css" />
+    <Content Include="Login\vendor\mdi-font\css\material-design-iconic-font.min.css" />
+    <Content Include="Login\vendor\mdi-font\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="Login\vendor\select2\select2.min.css" />
+    <Content Include="Login\vendor\select2\select2.min.js" />
+    <Content Include="Matenimiento\ListarP.aspx" />
+    <Content Include="Matenimiento\Vali\.gitignore" />
+    <Content Include="Matenimiento\Vali\docs\blank-page.html" />
+    <Content Include="Matenimiento\Vali\docs\bootstrap-components.html" />
+    <Content Include="Matenimiento\Vali\docs\charts.html" />
+    <Content Include="Matenimiento\Vali\docs\css\main.css" />
+    <Content Include="Matenimiento\Vali\docs\dashboard.html" />
+    <Content Include="Matenimiento\Vali\docs\docs.html" />
+    <Content Include="Matenimiento\Vali\docs\form-components.html" />
+    <Content Include="Matenimiento\Vali\docs\form-custom.html" />
+    <Content Include="Matenimiento\Vali\docs\form-notifications.html" />
+    <Content Include="Matenimiento\Vali\docs\form-samples.html" />
+    <Content Include="Matenimiento\Vali\docs\images\banner.jpg" />
+    <Content Include="Matenimiento\Vali\docs\index.html" />
+    <Content Include="Matenimiento\Vali\docs\js\bootstrap.min.js" />
+    <Content Include="Matenimiento\Vali\docs\js\jquery-3.3.1.min.js" />
+    <Content Include="Matenimiento\Vali\docs\js\main.js" />
+    <Content Include="Matenimiento\Vali\docs\js\plugins\bootstrap-datepicker.min.js" />
+    <Content Include="Matenimiento\Vali\docs\js\plugins\bootstrap-notify.min.js" />
+    <Content Include="Matenimiento\Vali\docs\js\plugins\chart.js" />
+    <Content Include="Matenimiento\Vali\docs\js\plugins\dataTables.bootstrap.min.js" />
+    <Content Include="Matenimiento\Vali\docs\js\plugins\dropzone.js" />
+    <Content Include="Matenimiento\Vali\docs\js\plugins\fullcalendar.min.js" />
+    <Content Include="Matenimiento\Vali\docs\js\plugins\jquery-ui.custom.min.js" />
+    <Content Include="Matenimiento\Vali\docs\js\plugins\jquery.dataTables.min.js" />
+    <Content Include="Matenimiento\Vali\docs\js\plugins\jquery.vmap.min.js" />
+    <Content Include="Matenimiento\Vali\docs\js\plugins\jquery.vmap.sampledata.js" />
+    <Content Include="Matenimiento\Vali\docs\js\plugins\jquery.vmap.world.js" />
+    <Content Include="Matenimiento\Vali\docs\js\plugins\moment.min.js" />
+    <Content Include="Matenimiento\Vali\docs\js\plugins\pace.min.js" />
+    <Content Include="Matenimiento\Vali\docs\js\plugins\select2.min.js" />
+    <Content Include="Matenimiento\Vali\docs\js\plugins\sweetalert.min.js" />
+    <Content Include="Matenimiento\Vali\docs\js\popper.min.js" />
+    <Content Include="Matenimiento\Vali\docs\page-calendar.html" />
+    <Content Include="Matenimiento\Vali\docs\page-error.html" />
+    <Content Include="Matenimiento\Vali\docs\page-invoice.html" />
+    <Content Include="Matenimiento\Vali\docs\page-lockscreen.html" />
+    <Content Include="Matenimiento\Vali\docs\page-login.html" />
+    <Content Include="Matenimiento\Vali\docs\page-mailbox.html" />
+    <Content Include="Matenimiento\Vali\docs\page-user.html" />
+    <Content Include="Matenimiento\Vali\docs\table-basic.html" />
+    <Content Include="Matenimiento\Vali\docs\table-data-table.html" />
+    <Content Include="Matenimiento\Vali\docs\ui-cards.html" />
+    <Content Include="Matenimiento\Vali\docs\widgets.html" />
+    <Content Include="Matenimiento\Vali\Gruntfile.js" />
+    <Content Include="Matenimiento\Vali\node-dev-server.js" />
     <Content Include="Registrar.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -95,6 +159,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Matenimiento\ListarP.aspx.cs">
+      <DependentUpon>ListarP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Matenimiento\ListarP.aspx.designer.cs">
+      <DependentUpon>ListarP.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registrar.aspx.cs">
@@ -204,7 +275,7 @@
     <Content Include="Login\scss\bootstrap\_type.scss" />
     <Content Include="Login\scss\bootstrap\_utilities.scss" />
     <Content Include="Login\scss\bootstrap\_variables.scss" />
-    <Content Include="Login\scss\style.scss" />
+    <Content Include="Login\scss\style1.scss" />
     <Content Include="Login\fonts\Nunito\Nunito-Black.ttf" />
     <Content Include="Login\fonts\Nunito\Nunito-BlackItalic.ttf" />
     <Content Include="Login\fonts\Nunito\Nunito-Bold.ttf" />
@@ -219,6 +290,186 @@
     <Content Include="Login\fonts\Nunito\Nunito-Regular.ttf" />
     <Content Include="Login\fonts\Nunito\Nunito-SemiBold.ttf" />
     <Content Include="Login\fonts\Nunito\Nunito-SemiBoldItalic.ttf" />
+    <Content Include="Login\vendor\font-awesome-4.7\fonts\fontawesome-webfont.eot" />
+    <Content Include="Login\vendor\font-awesome-4.7\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Login\vendor\font-awesome-4.7\fonts\fontawesome-webfont.woff" />
+    <Content Include="Login\vendor\font-awesome-4.7\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Login\vendor\font-awesome-4.7\fonts\FontAwesome.otf" />
+    <Content Include="Login\vendor\mdi-font\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="Login\vendor\mdi-font\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="Login\vendor\mdi-font\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="Login\vendor\mdi-font\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="Matenimiento\Vali\.browserslistrc" />
+    <Content Include="Matenimiento\Vali\.github\ISSUE_TEMPLATE\bug_report.md" />
+    <Content Include="Matenimiento\Vali\.github\ISSUE_TEMPLATE\feature_request.md" />
+    <Content Include="Matenimiento\Vali\.github\PULL_REQUEST_TEMPLATE.md" />
+    <Content Include="Matenimiento\Vali\CODE_OF_CONDUCT.md" />
+    <Content Include="Matenimiento\Vali\CONTRIBUTING.md" />
+    <Content Include="Matenimiento\Vali\LICENSE" />
+    <Content Include="Matenimiento\Vali\package-lock.json" />
+    <Content Include="Matenimiento\Vali\package.json" />
+    <Content Include="Matenimiento\Vali\README.md" />
+    <Content Include="Matenimiento\Vali\src\pug\blank-page.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\bootstrap-components.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\charts.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\dashboard.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\docs.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\form-components.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\form-custom.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\form-notifications.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\form-samples.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\includes\_head.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\includes\_header.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\includes\_javascript.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\includes\_landing-icons.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\includes\_sidebar.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\index.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\layouts\_layout.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\page-calendar.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\page-error.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\page-invoice.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\page-lockscreen.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\page-login.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\page-mailbox.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\page-user.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\table-basic.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\table-data-table.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\ui-cards.pug" />
+    <Content Include="Matenimiento\Vali\src\pug\widgets.pug" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_alert.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_background-variant.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_badge.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_border-radius.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_box-shadow.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_breakpoints.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_buttons.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_caret.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_clearfix.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_deprecate.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_float.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_forms.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_gradients.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_grid-framework.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_grid.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_hover.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_image.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_list-group.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_lists.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_nav-divider.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_pagination.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_reset-text.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_resize.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_screen-reader.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_size.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_table-row.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_text-emphasis.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_text-hide.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_text-truncate.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_transition.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\mixins\_visibility.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\utilities\_align.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\utilities\_background.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\utilities\_borders.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\utilities\_clearfix.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\utilities\_display.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\utilities\_embed.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\utilities\_flex.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\utilities\_float.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\utilities\_overflow.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\utilities\_position.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\utilities\_screenreaders.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\utilities\_shadows.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\utilities\_sizing.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\utilities\_spacing.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\utilities\_stretched-link.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\utilities\_text.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\utilities\_visibility.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\vendor\_rfs.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_alert.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_badge.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_bootstrap-grid.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_bootstrap-reboot.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_bootstrap.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_breadcrumb.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_button-group.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_buttons.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_card.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_carousel.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_close.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_code.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_custom-forms.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_dropdown.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_forms.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_functions.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_grid.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_images.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_input-group.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_jumbotron.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_list-group.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_media.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_mixins.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_modal.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_nav.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_navbar.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_pagination.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_popover.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_print.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_progress.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_reboot.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_root.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_spinners.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_tables.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_toasts.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_tooltip.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_transitions.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_type.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_utilities.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\bootstrap-source\_variables.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\select2\mixins\_gradients.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\select2\theme\default\layout.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\select2\theme\default\_multiple.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\select2\theme\default\_single.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\select2\_dropdown.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\select2\_multiple.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\select2\_select2.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\select2\_single.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\_bootstrap-datepicker.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\_customize-bootstrap.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\_dataTables.bootstrap.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\_dropzone-basic.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\_dropzone.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\_fonts.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\_fullcalendar.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\_jqvmap.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\_notify.sass" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\_pace.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\_sweetalert.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\1-tools\_vars.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\2-basics\_app.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\2-basics\_helpers.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\3-component\_app-title.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\3-component\_button-spinner.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\3-component\_button.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\3-component\_chat.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\3-component\_custom-radio-n-checkbox.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\3-component\_dropdown.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\3-component\_header.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\3-component\_material-half-bg.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\3-component\_material-loader.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\3-component\_rtl.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\3-component\_sidebar-mini.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\3-component\_sidebar.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\3-component\_tile.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\3-component\_toggle-button.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\3-component\_widgets.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\4-pages\_docs.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\4-pages\_error-page.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\4-pages\_landing-page.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\4-pages\_lockscreen-material.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\4-pages\_login-material.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\4-pages\_mailbox.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\4-pages\_user-profile.scss" />
+    <Content Include="Matenimiento\Vali\src\sass\main.scss" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -226,6 +477,16 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
+      <Project>{3f386c97-79c2-4376-872c-9749ac095f1b}</Project>
+      <Name>CapaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{4cb9247b-ee11-4082-b17c-a7e9086772ce}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

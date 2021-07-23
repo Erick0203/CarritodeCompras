@@ -13,5 +13,10 @@ namespace CarritodeCompras
         {
 
         }
+
+        protected void lnk_registrar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Registrar.aspx");
+        }
     }
 }

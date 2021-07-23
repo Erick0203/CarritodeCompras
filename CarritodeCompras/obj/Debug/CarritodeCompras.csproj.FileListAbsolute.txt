@@ -50,8 +50,13 @@ C:\Users\Erik\source\repos\CarritodeCompras\CarritodeCompras\bin\roslyn\vbc.exe.
 C:\Users\Erik\source\repos\CarritodeCompras\CarritodeCompras\bin\roslyn\vbc.rsp
 C:\Users\Erik\source\repos\CarritodeCompras\CarritodeCompras\bin\roslyn\VBCSCompiler.exe
 C:\Users\Erik\source\repos\CarritodeCompras\CarritodeCompras\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Erik\source\repos\CarritodeCompras\CarritodeCompras\bin\CapaDatos.dll
+C:\Users\Erik\source\repos\CarritodeCompras\CarritodeCompras\bin\CapaNegocio.dll
 C:\Users\Erik\source\repos\CarritodeCompras\CarritodeCompras\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Erik\source\repos\CarritodeCompras\CarritodeCompras\bin\CapaDatos.pdb
+C:\Users\Erik\source\repos\CarritodeCompras\CarritodeCompras\bin\CapaNegocio.pdb
 C:\Users\Erik\source\repos\CarritodeCompras\CarritodeCompras\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Erik\source\repos\CarritodeCompras\CarritodeCompras\obj\Debug\CarritodeCompras.csproj.AssemblyReference.cache
 C:\Users\Erik\source\repos\CarritodeCompras\CarritodeCompras\obj\Debug\CarritodeCompras.csproj.CoreCompileInputs.cache
 C:\Users\Erik\source\repos\CarritodeCompras\CarritodeCompras\obj\Debug\CarritodeCompras.csproj.CopyComplete
 C:\Users\Erik\source\repos\CarritodeCompras\CarritodeCompras\obj\Debug\CarritodeCompras.dll
