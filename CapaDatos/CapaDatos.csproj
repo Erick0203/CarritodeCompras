@@ -1,10 +1,18 @@
+<<<<<<< HEAD
 ﻿<?xml version="1.0" encoding="utf-8"?>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+>>>>>>> 75014519f5e086e0aef445a62b5ebb5d2ba78035
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+<<<<<<< HEAD
     <ProjectGuid>{3F386C97-79C2-4376-872C-9749AC095F1B}</ProjectGuid>
+=======
+    <ProjectGuid>0ba71628-8ff6-4da6-a3f6-7e11e7f8aae8</ProjectGuid>
+>>>>>>> 75014519f5e086e0aef445a62b5ebb5d2ba78035
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CapaDatos</RootNamespace>
@@ -31,6 +39,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,3 +54,26 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
+=======
+    <Reference Include="System"/>
+    
+    <Reference Include="System.Core"/>
+    <Reference Include="System.Xml.Linq"/>
+    <Reference Include="System.Data.DataSetExtensions"/>
+    
+    
+    <Reference Include="Microsoft.CSharp"/>
+    
+    <Reference Include="System.Data"/>
+    
+    <Reference Include="System.Net.Http"/>
+    
+    <Reference Include="System.Xml"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+ </Project>
+>>>>>>> 75014519f5e086e0aef445a62b5ebb5d2ba78035
